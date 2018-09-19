@@ -21,6 +21,10 @@ app.get('/', (request, response) => {
     })
 })
 
+app.get('/daniel', (request, response) => {
+    response.render('daniel', {})
+})
+
 app.use('/static', express.static('public'))
 
 app.use((err, request, response, next) => {
