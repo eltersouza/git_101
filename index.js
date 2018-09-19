@@ -21,6 +21,9 @@ app.get('/', (request, response) => {
     })
 })
 
+app.get('/adhan', (request, response) => {
+    response.render('adhan', { })
+})
 
 app.get('/contact', (request, response) => {
   response.render('contact', {
