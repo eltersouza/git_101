@@ -21,10 +21,14 @@ app.get('/', (request, response) => {
     })
 })
 
+
 app.get('/adhan', (request, response) => {
     response.render('adhan', { })
 })
 
+app.get('/elter', (request, response) => {
+    response.render('elter', {})
+})
 
 app.use('/static', express.static('public'))
 
