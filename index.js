@@ -22,22 +22,23 @@ app.get('/', (request, response) => {
 })
 
 app.get('/Carlos', (request, response) => {
-    response.render('Carlos', {
-        name: 'John'
-    })
+    response.render('Carlos', {})
+})
+
 app.get('/daniel', (request, response) => {
     response.render('daniel', {})
 })
+
 app.get('/adhan', (request, response) => {
     response.render('adhan', { })
 })
+
 app.get('/contact', (request, response) => {
-  response.render('contact', {
-        name: 'John'
-  })
+    response.render('contact', {})
+})
+
 app.get('/elter', (request, response) => {
     response.render('elter', {})
-
 })
 
 app.use('/static', express.static('public'))
@@ -55,4 +56,4 @@ app.listen(port, (hr) =>{
     
     console.log("Init ExpressJS.")
     console.log(`Listening in the port ${port}`);
-});
+})
